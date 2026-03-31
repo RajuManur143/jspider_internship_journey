@@ -4,40 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration Portal</title>
+    <link rel="stylesheet" href="day8.css">
 </head>
 
 <body>
-    <center>
-        <img src="https://campuspro.co.in/collage-image/1757679331_row_2.jpg" alt="" height="100px" width="100px">
-        <h5>Government Engineering College, karwar, Uttarkannad</h5>
-        <h6>Department of Computer science & Engineering</h6>
-    </center>
+    <main class="page">
+        <section class="left-panel">
+            <div class="branding">
+                <img src="https://campuspro.co.in/collage-image/1757679331_row_2.jpg" alt="College logo">
+                <h2>Government Engineering College</h2>
+                <p>Karwar - Uttarkannada</p>
+                <small>Govt. of Karnataka</small>
+            </div>
 
-    <form method="post">
-        <fieldset>
-            <legend>Registration page</legend>
-            <label for="student name">Full Name</label>
-            <input type="text" name="S_name" id="student name">
-            <br><br>
-            <label for="mob num">mobile number</label>
-            <input type="text" name="u_sn" id="mob num">
-            <button>send OTP</button>
-            <br><br>
-            <label for="email">E mail</label>
-            <input type="text" id="email" name="e_mail">
-            <br><br>
-            <label for="confirm_pass">Confirm password</label>
-            <input type="text" id="confirm_pass" name="password">
-            <br><br>
-            <a href="">agree the terms and conditions</a>
-            <br><br>
-            <button>Creat account</button>
-            <h5>Already have account?<a href="">sign in</a></h5>
+            <div class="form-copy">
+                <h1>Create an account</h1>
+                <p>Start your learning journey today</p>
+            </div>
 
-        </fieldset>
+            <form id="registerForm" novalidate>
+                <div class="field">
+                    <label for="fullName">Full Name</label>
+                    <div class="input">
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                    </div>
+                </div>
 
-    </form>
+                <div class="field">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <div class="input-with-button">
+                        <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter 10 digit number" maxlength="10" required>
+                        <button type="button" class="otp-btn" id="sendOtpBtn">Send OTP</button>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="otpInput">OTP</label>
+                    <div class="input">
+                        <input type="text" id="otpInput" name="otpInput" placeholder="Enter 6 digit OTP" maxlength="6">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="password-wrap">
+                        <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required>
+                        <button type="button" class="toggle-btn" data-target="password" aria-label="Show or hide password">Show</button>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="password-wrap">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                        <button type="button" class="toggle-btn" data-target="confirmPassword" aria-label="Show or hide confirm password">Show</button>
+                    </div>
+                </div>
+
+                <div class="terms-box">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the <a href="#" id="termsLink">Terms &amp; Conditions</a></label>
+                </div>
+
+                <button type="submit" class="submit-btn" id="createAccountBtn">Create Account</button>
+                <p id="formMessage" class="message"></p>
+                <p class="signin">Already have an account? <a href="#" id="signInLink">Sign in</a></p>
+            </form>
+        </section>
+
+        <section class="right-panel">
+            <div class="hero-overlay">
+                <h2>Master new skills with ease.</h2>
+                <p>Join thousands of students learning on a modern LMS platform built for accessible, practical, and guided education.</p>
+            </div>
+
+            <div class="floating-actions">
+                <button type="button" class="floating-btn call-btn" id="callBtn" aria-label="Call support">Call</button>
+                <button type="button" class="floating-btn chat-btn" id="chatBtn" aria-label="Chat with support">Chat</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="day8.js"></script>.
 </body>
 
 </html>
