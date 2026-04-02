@@ -1,0 +1,21 @@
+    * {
+        background-color: rgb(156, 151, 143);
+    }
+    
+    #max {
+        background-color: blue;
+    }
+    
+    .raju {
+        background-color: rgb(189, 159, 216);
+    }
+    
+    h3 {
+        background-color: brown;
+    }
+    
+    #max,
+    .raju,
+    p {
+        background-color: rgb(213, 228, 8);
+    }
