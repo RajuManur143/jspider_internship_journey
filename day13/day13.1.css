@@ -1,0 +1,15 @@
+.virat {
+    opacity: 1;
+}
+
+.anushka {
+    opacity: 0;
+}
+
+.image:hover.virat {
+    opacity: 0;
+}
+
+.image:hover.anushka {
+    opacity: 1;
+}

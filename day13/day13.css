@@ -1,0 +1,28 @@
+/* a:link {
+    color: black;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: black;
+} */
+
+p:first-child {
+    background: #df1616;
+    : rgb(230, 16, 16);
+}
+
+p:nth-child(4) {
+    background: #ac6666;
+}
+
+p:last-child {
+    background-color: blue;
+}
