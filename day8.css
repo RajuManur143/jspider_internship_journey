@@ -99,6 +99,7 @@ label {
 
 .input,
 .input-with-button,
+.otp-row,
 .password-wrap,
 .terms-box {
     border: 1px solid var(--line);
@@ -109,6 +110,7 @@ label {
 
 .input:focus-within,
 .input-with-button:focus-within,
+.otp-row:focus-within,
 .password-wrap:focus-within,
 .terms-box:focus-within {
     border-color: var(--primary);
@@ -135,7 +137,14 @@ input[type="tel"] {
     overflow: hidden;
 }
 
+.otp-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    overflow: hidden;
+}
+
 .otp-btn,
+.verify-btn,
 .submit-btn,
 .toggle-btn,
 .floating-btn {
@@ -153,7 +162,17 @@ input[type="tel"] {
     font-weight: 700;
 }
 
+.verify-btn {
+    margin: 6px;
+    padding: 0 16px;
+    border-radius: 10px;
+    background: #0f9d58;
+    color: #fff;
+    font-weight: 700;
+}
+
 .otp-btn:hover,
+.verify-btn:hover,
 .submit-btn:hover,
 .toggle-btn:hover,
 .floating-btn:hover {
@@ -161,6 +180,7 @@ input[type="tel"] {
 }
 
 .otp-btn:disabled,
+.verify-btn:disabled,
 .submit-btn:disabled {
     opacity: 0.55;
     cursor: not-allowed;
@@ -203,10 +223,56 @@ input[type="tel"] {
 }
 
 .terms-box a,
+.helper-link,
+.form-link,
 .signin a {
     color: var(--primary);
     text-decoration: none;
     font-weight: 700;
+}
+
+.helper-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.helper-row label {
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.helper-row input {
+    accent-color: var(--primary);
+}
+
+.page-link {
+    text-align: center;
+    color: var(--muted);
+    margin: 2px 0 0;
+    font-size: 0.94rem;
+}
+
+.page-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.home-link {
+    text-align: center;
+    margin: -4px 0 0;
+    font-size: 0.94rem;
+}
+
+.home-link a {
+    color: var(--muted);
+    text-decoration: none;
 }
 
 .submit-btn {
@@ -313,6 +379,18 @@ input[type="tel"] {
     .right-panel {
         min-height: 50vh;
     }
+
+    .input-with-button,
+    .otp-row {
+        grid-template-columns: 1fr;
+    }
+
+    .otp-btn,
+    .verify-btn {
+        margin: 0 10px 10px;
+        min-height: 44px;
+    }
+
     .hero-overlay {
         padding: 28px 20px 88px;
     }

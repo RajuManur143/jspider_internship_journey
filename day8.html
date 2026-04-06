@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Portal</title>
+    <title>Sign Up Portal</title>
     <link rel="stylesheet" href="day8.css">
 </head>
 
@@ -41,8 +41,9 @@
 
                 <div class="field">
                     <label for="otpInput">OTP</label>
-                    <div class="input">
+                    <div class="otp-row">
                         <input type="text" id="otpInput" name="otpInput" placeholder="Enter 6 digit OTP" maxlength="6">
+                        <button type="button" class="verify-btn" id="verifyOtpBtn">Verify OTP</button>
                     </div>
                 </div>
 
@@ -76,7 +77,7 @@
 
                 <button type="submit" class="submit-btn" id="createAccountBtn">Create Account</button>
                 <p id="formMessage" class="message"></p>
-                <p class="signin">Already have an account? <a href="#" id="signInLink">Sign in</a></p>
+                <p class="signin">Already have an account? <a href="signin.html" id="signInLink">Sign in</a></p>
             </form>
         </section>
 
@@ -93,7 +94,7 @@
         </section>
     </main>
 
-    <script src="day8.js"></script>.
+    <script src="day8.js"></script>
 </body>
 
 </html>

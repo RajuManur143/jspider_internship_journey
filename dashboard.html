@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <img src="https://campuspro.co.in/collage-image/1757679331_row_2.jpg" alt="College logo">
+                <div>
+                    <h1>Centre for Online Education</h1>
+                    <p>VTU - Belagavi</p>
+                    <small>Govt. of Karnataka</small>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <p class="nav-title">Menu</p>
+                <a href="#dashboardHome" class="nav-item active" data-target="dashboardHome">Dashboard</a>
+                <a href="#browseCourses" class="nav-item" data-target="browseCourses">Browse Courses</a>
+                <a href="#myCourses" class="nav-item" data-target="myCourses">My Courses</a>
+                <a href="#myProgrammes" class="nav-item" data-target="myProgrammes">My Programmes</a>
+                <a href="#myApplications" class="nav-item" data-target="myApplications">My Applications</a>
+                <a href="#certificates" class="nav-item" data-target="certificates">Certificates</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button type="button" class="footer-link" id="logoutBtn">Logout</button>
+                <button type="button" class="footer-link" id="profileSettingsBtn">Profile Settings</button>
+            </div>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="topbar">
+                <div class="top-links">
+                    <a href="#dashboardHome" data-target="dashboardHome">Home</a>
+                    <a href="#myProgrammes" data-target="myProgrammes">Programs</a>
+                    <a href="#browseCourses" data-target="browseCourses">Courses</a>
+                    <a href="#myApplications" data-target="myApplications">Exams</a>
+                    <a href="#certificates" data-target="certificates">Academics</a>
+                </div>
+                <button type="button" class="profile-badge profile-btn" id="profileBadge" aria-label="Open profile">U</button>
+            </header>
+
+            <section class="welcome-panel" id="dashboardHome">
+                <div class="welcome-copy">
+                    <p class="eyebrow">Student Dashboard</p>
+                    <h2 id="welcomeHeading">Hello, Student!</h2>
+                    <p id="welcomeSubtext">Here's your learning progress for this week.</p>
+                </div>
+                <div class="welcome-visual">
+                    <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="Campus learning banner">
+                </div>
+            </section>
+
+            <section class="stats-grid" id="browseCourses">
+                <article class="stat-card">
+                    <div class="stat-icon">B</div>
+                    <div>
+                        <p>Total Enrollments</p>
+                        <strong>5</strong>
+                    </div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-icon">A</div>
+                    <div>
+                        <p>Active Applications</p>
+                        <strong>0</strong>
+                    </div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-icon">C</div>
+                    <div>
+                        <p>Enrolled Courses</p>
+                        <strong>5</strong>
+                    </div>
+                </article>
+                <article class="stat-card">
+                    <div class="stat-icon">D</div>
+                    <div>
+                        <p>Completed</p>
+                        <strong>0</strong>
+                    </div>
+                </article>
+            </section>
+
+            <section class="content-section" id="myCourses">
+                <div class="section-head">
+                    <h3>My Enrollments</h3>
+                    <a href="#myCourses" class="section-link" data-target="myCourses">View All</a>
+                </div>
+                <div class="course-grid">
+                    <article class="course-card">
+                        <h4>Sustainable Transportation Systems</h4>
+                        <p>Enrolled: N/A</p>
+                        <div class="course-meta">
+                            <span class="status-pill">Enrolled</span>
+                            <button type="button" class="small-btn course-view-btn" data-course="Sustainable Transportation Systems">View</button>
+                        </div>
+                    </article>
+                    <article class="course-card">
+                        <h4>Wastewater Treatment And Recycling</h4>
+                        <p>Enrolled: N/A</p>
+                        <div class="course-meta">
+                            <span class="status-pill">Enrolled</span>
+                            <button type="button" class="small-btn course-view-btn" data-course="Wastewater Treatment And Recycling">View</button>
+                        </div>
+                    </article>
+                    <article class="course-card">
+                        <h4>Privacy And Security in Online Social Media</h4>
+                        <p>Enrolled: N/A</p>
+                        <div class="course-meta">
+                            <span class="status-pill">Enrolled</span>
+                            <button type="button" class="small-btn course-view-btn" data-course="Privacy And Security in Online Social Media">View</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section" id="myProgrammes">
+                <div class="section-head">
+                    <h3>My Programmes</h3>
+                    <a href="#myProgrammes" class="section-link" data-target="myProgrammes">Open</a>
+                </div>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h4>AI and Data Science</h4>
+                        <p>Semester 2 | Weekend batch | 78% progress</p>
+                    </article>
+                    <article class="info-card">
+                        <h4>Professional Skills Track</h4>
+                        <p>Soft skills, presentations, and project communication modules.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section" id="myApplications">
+                <div class="section-head">
+                    <h3>My Applications</h3>
+                    <a href="#myApplications" class="section-link" data-target="myApplications">View All</a>
+                </div>
+                <div class="empty-state">
+                    <p>No applications yet.</p>
+                    <button type="button" class="small-btn wide-btn" id="applicationsBtn">Go to My Applications</button>
+                </div>
+            </section>
+
+            <section class="content-section bottom-space" id="certificates">
+                <div class="section-head">
+                    <h3>Certificates</h3>
+                    <a href="#certificates" class="section-link" data-target="certificates">View All</a>
+                </div>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h4>Course Completion Hub</h4>
+                        <p>Your generated certificates will appear here once courses are completed.</p>
+                        <button type="button" class="small-btn" id="certificateBtn">Check Eligibility</button>
+                    </article>
+                    <article class="info-card profile-panel" id="profilePanel">
+                        <h4>Student Profile</h4>
+                        <p id="profileName">Name: Student</p>
+                        <p id="profileEmail">Email: student@example.com</p>
+                        <p id="profileMobile">Mobile: Not available</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <div class="floating-actions">
+            <button type="button" class="floating-btn call-btn" id="callBtn" aria-label="Call support">Call</button>
+            <button type="button" class="floating-btn chat-btn" id="chatBtn" aria-label="Chat with support">Chat</button>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
