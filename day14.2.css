@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.flag {
+    width: 300px;
+    height: 180px;
+    border: 2px solid none;
+}
+
+.saffron {
+    0 height: 60px;
+    background-color: #ca731d;
+}
+
+.white {
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    height: 60px;
+    background-color: #138808;
+}
+
+
+/* Ashoka Chakra */
+
+.chakra {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #000080;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+/* Optional spokes effect */
+
+.chakra::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #000080;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chakra::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #000080;
+    top: 50%;
+    transform: translateY(-50%);
+}
