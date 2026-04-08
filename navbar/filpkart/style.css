@@ -1,0 +1,64 @@
+.navbar {
+    border: 2px solid red;
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.navbarchild1 {
+    border: 2px solid none;
+    height: 100px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.navbarchild2 {
+    border: 2px solid none;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navbarflip1 {
+    background-image: url("https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Logo.png");
+    background-size: 100% 100%;
+}
+
+.search {
+    border: 2px solid red;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.search1 {
+    border: 2px solid red;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 20px;
+    width: 80%;
+    border-radius: 10px;
+    color: blue;
+}
+
+.search2 {
+    border: 2px solid red;
+    height: 100%;
+    width: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
